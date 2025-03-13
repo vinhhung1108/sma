@@ -21,12 +21,15 @@ export default function Home() {
             className="p-6 rounded-lg text-center text-white"
             style={{ backgroundColor: "rgba(37, 99, 235, 0.8)" }}
           >
-            <h1 className="text-4xl font-bold">
-              SMA Vina - Chất Lượng Làm Nên Uy Tín
-            </h1>
+            <h1 className="text-4xl font-bold">SMA VINA</h1>
+
+            <p className="mt-2 text-lg">
+              Công ty TNHH thiết kế và xây dựng SMA
+            </p>
             <p className="mt-2 text-lg">
               Chuyên thiết kế & thi công công trình nhà ở hiện đại
             </p>
+            <h2 className="mt-2 text-lg">Chất Lượng Làm Nên Uy Tín</h2>
           </div>
         </div>
 
