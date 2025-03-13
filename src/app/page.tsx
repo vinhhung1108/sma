@@ -17,7 +17,10 @@ export default function Home() {
           className="relative w-full h-[500px] bg-cover bg-center flex items-center justify-center"
           style={{ backgroundImage: "url('/images/morden-house-01.jpg')" }}
         >
-          <div className="bg-blue-600 bg-opacity-80 p-6 rounded-lg text-center text-white">
+          <div
+            className="p-6 rounded-lg text-center text-white"
+            style={{ backgroundColor: "rgba(37, 99, 235, 0.8)" }}
+          >
             <h1 className="text-4xl font-bold">
               SMA Vina - Chất Lượng Làm Nên Uy Tín
             </h1>
@@ -57,6 +60,23 @@ export default function Home() {
                 <p className="mt-2 text-gray-600">{service.desc}</p>
               </div>
             ))}
+          </div>
+        </section>
+        {/* Block Giới Thiệu Công Ty */}
+        <section className="py-16 bg-white text-center mx-auto px-6">
+          <div className="max-w-6xl mx-auto">
+            <h2 className="text-3xl font-semibold mb-6">Về Chúng Tôi</h2>
+            <p className="text-lg text-gray-700 leading-relaxed">
+              SMA Vina là công ty chuyên thiết kế và thi công công trình nhà ở,
+              với sứ mệnh đặt chất lượng lên hàng đầu. Chúng tôi không chỉ tạo
+              ra những không gian sống đẹp mắt mà còn đảm bảo sự bền vững, tiện
+              nghi theo thời gian.
+            </p>
+            <p className="text-lg text-gray-700 leading-relaxed mt-4">
+              Với kinh nghiệm qua nhiều công trình thực tế, SMA Vina đã không
+              ngừng cải tiến quy trình thiết kế và thi công, đúc rút được những
+              giải pháp tối ưu cho công trình dân dụng.
+            </p>
           </div>
         </section>
 
