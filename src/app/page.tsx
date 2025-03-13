@@ -17,7 +17,7 @@ export default function Home() {
           className="relative w-full h-[500px] bg-cover bg-center flex items-center justify-center"
           style={{ backgroundImage: "url('/images/morden-house-01.jpg')" }}
         >
-          <div className="bg-black bg-opacity-50 p-6 rounded-lg text-center text-white">
+          <div className="bg-blue-600 bg-opacity-80 p-6 rounded-lg text-center text-white">
             <h1 className="text-4xl font-bold">
               SMA Vina - Chất Lượng Làm Nên Uy Tín
             </h1>
@@ -64,20 +64,19 @@ export default function Home() {
         <section className="py-16 bg-gray-200 text-center">
           <h2 className="text-3xl font-semibold mb-8">Dự Án Tiêu Biểu</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
-            {["/project1.jpg", "/project2.jpg", "/project3.jpg"].map(
-              (img, index) => (
-                <div
-                  key={index}
-                  className="rounded-lg overflow-hidden shadow-lg"
-                >
-                  <img
-                    src={img}
-                    alt={`Dự án ${index + 1}`}
-                    className="w-full h-64 object-cover"
-                  />
-                </div>
-              )
-            )}
+            {[
+              "images/project01.jpg",
+              "images/project02.jpg",
+              "images/project03.jpg",
+            ].map((img, index) => (
+              <div key={index} className="rounded-lg overflow-hidden shadow-lg">
+                <img
+                  src={img}
+                  alt={`Dự án ${index + 1}`}
+                  className="w-full h-64 object-cover"
+                />
+              </div>
+            ))}
           </div>
         </section>
 
