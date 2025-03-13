@@ -110,7 +110,7 @@ export default function Home() {
             📍 Địa chỉ: Phường An Khê, Quận Thanh Khê, TP. Đà Nẵng
           </p>
           <p className="text-lg mb-4">📞 Hotline: 0905720520, 0931124789</p>
-          <p className="text-lg mb-4">📧 Email:smavina@gmail.com</p>
+          <p className="text-lg mb-4">📧 Email:smaxddn@gmail.com</p>
           <a
             href="tel:0905720520"
             className="bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-bold shadow-lg hover:bg-blue-700 transition"
