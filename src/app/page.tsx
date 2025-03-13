@@ -10,45 +10,52 @@ export default function Home() {
           content="Công ty chuyên thiết kế và thi công công trình nhà ở với chất lượng hàng đầu."
         />
       </Head>
-      <div className="container mx-auto px-4 py-8">
-        <h1 className="text-3xl font-bold text-center">
-          Giới Thiệu SMA Vina – Chất Lượng Làm Nên Uy Tín
+
+      <div className="min-h-screen bg-gradient-to-br from-blue-500 to-indigo-700 text-white flex flex-col items-center justify-center px-6 py-12">
+        {/* Header */}
+        <h1 className="text-4xl font-bold text-center mb-6">
+          Giới Thiệu SMA Vina
         </h1>
+        <p className="text-lg text-center max-w-2xl">
+          Chúng tôi chuyên thiết kế và thi công công trình nhà ở với chất lượng
+          hàng đầu, tạo nên không gian sống bền vững và tiện nghi.
+        </p>
 
-        <section className="mt-6">
-          <h2 className="text-2xl font-semibold">Về Chúng Tôi</h2>
-          <p>
-            SMA Vina là công ty chuyên thiết kế và thi công công trình nhà ở,
-            với sứ mệnh đặt chất lượng lên hàng đầu...
-          </p>
-        </section>
+        {/* Dịch vụ */}
+        <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6 w-full max-w-5xl">
+          {[
+            {
+              title: "Thiết kế kiến trúc & nội thất",
+              desc: "Sáng tạo, tối ưu công năng, phù hợp phong cách sống.",
+            },
+            {
+              title: "Thi công trọn gói",
+              desc: "Từ phần thô đến hoàn thiện, đảm bảo chất lượng cao.",
+            },
+            {
+              title: "Cải tạo, nâng cấp",
+              desc: "Giúp không gian cũ trở nên hiện đại và tiện nghi hơn.",
+            },
+          ].map((service, index) => (
+            <div
+              key={index}
+              className="bg-white text-gray-800 p-6 rounded-xl shadow-lg"
+            >
+              <h3 className="text-xl font-semibold">{service.title}</h3>
+              <p className="mt-2">{service.desc}</p>
+            </div>
+          ))}
+        </div>
 
-        <section className="mt-6">
-          <h2 className="text-2xl font-semibold">Dịch Vụ Của Chúng Tôi</h2>
-          <ul className="list-disc ml-5">
-            <li>Thiết kế kiến trúc & nội thất</li>
-            <li>Thi công trọn gói</li>
-            <li>Cải tạo, nâng cấp công trình</li>
-          </ul>
-        </section>
-
-        <section className="mt-6">
-          <h2 className="text-2xl font-semibold">Tại Sao Chọn SMA Vina?</h2>
-          <ul className="list-disc ml-5">
-            <li>Kinh nghiệm thực chiến</li>
-            <li>Đội ngũ chuyên nghiệp</li>
-            <li>Vật liệu & công nghệ tiên tiến</li>
-            <li>Tiến độ & chi phí tối ưu</li>
-          </ul>
-        </section>
-
-        <section className="mt-6">
-          <h2 className="text-2xl font-semibold">Liên Hệ Với Chúng Tôi</h2>
-          <p>📍 Địa chỉ: …</p>
-          <p>📞 Hotline: 0905720520, 0931124789</p>
-          <p>📧 Email: …</p>
-          <p>🌍 Website: …</p>
-        </section>
+        {/* CTA */}
+        <div className="mt-10">
+          <a
+            href="tel:0905720520"
+            className="bg-yellow-400 text-gray-900 px-6 py-3 rounded-full text-lg font-bold shadow-lg hover:bg-yellow-500 transition"
+          >
+            Liên Hệ Ngay: 0905 720 520
+          </a>
+        </div>
       </div>
     </>
   );
