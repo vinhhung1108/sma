@@ -26,13 +26,13 @@ export default function Home() {
             <img
               src="/images/logo-text-white.png"
               alt="SMA Vina Logo"
-              className="h-14"
+              className="h-10"
             />
           </div>
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-white text-4xl focus:outline-none"
+            className="md:hidden text-white text-3xl focus:outline-none"
             onClick={() => setMenuOpen(!menuOpen)}
           >
             ☰
@@ -160,7 +160,7 @@ export default function Home() {
           </div>
         </section>
 
-        <div className="w-full mt-10 pb-20 flex flex-col md:flex-row justify-center items-center gap-6">
+        <div className="w-full mt-10 pb-20 px-6 flex flex-col md:flex-row justify-center items-center gap-6">
           {/* Block Liên Hệ */}
           <div>
             <h2 className="text-3xl font-semibold mb-6">
