@@ -163,15 +163,6 @@ export default function Home() {
               Gọi Ngay
             </a>
           </div>
-
-          {/* Hình ảnh cuối trang */}
-          <div className="max-w-[230px] w-full md:w-auto">
-            <img
-              src="/images/logo-footer.png"
-              alt="Hình ảnh cuối trang"
-              className="w-full h-auto"
-            />
-          </div>
         </div>
       </div>
     </>
