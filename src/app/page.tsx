@@ -21,13 +21,11 @@ export default function Home() {
                 alt="SMA Vina Logo"
                 className="h-14"
               />
-
               <img
                 src="/images/logo-text-white.png"
                 alt="SMA Vina Logo"
                 className="h-14"
               />
-              {/* <span className="text-xl font-bold">SMA-VINA</span> */}
             </div>
           </div>
           <nav>
@@ -66,7 +64,6 @@ export default function Home() {
             style={{ backgroundColor: "rgba(37, 99, 235, 0.8)" }}
           >
             <h1 className="text-4xl font-bold">SMA VINA</h1>
-
             <p className="mt-2 text-lg">
               Công ty TNHH thiết kế và xây dựng SMA
             </p>
@@ -109,23 +106,6 @@ export default function Home() {
             ))}
           </div>
         </section>
-        {/* Block Giới Thiệu Công Ty */}
-        <section className="py-16 bg-white text-center mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
-            <h2 className="text-3xl font-semibold mb-6">Về Chúng Tôi</h2>
-            <p className="text-lg text-gray-700 leading-relaxed">
-              SMA Vina là công ty chuyên thiết kế và thi công công trình nhà ở,
-              với sứ mệnh đặt chất lượng lên hàng đầu. Chúng tôi không chỉ tạo
-              ra những không gian sống đẹp mắt mà còn đảm bảo sự bền vững, tiện
-              nghi theo thời gian.
-            </p>
-            <p className="text-lg text-gray-700 leading-relaxed mt-4">
-              Với kinh nghiệm qua nhiều công trình thực tế, SMA Vina đã không
-              ngừng cải tiến quy trình thiết kế và thi công, đúc rút được những
-              giải pháp tối ưu cho công trình dân dụng.
-            </p>
-          </div>
-        </section>
 
         {/* Dự Án Tiêu Biểu */}
         <section className="py-16 bg-gray-200 text-center">
@@ -147,21 +127,34 @@ export default function Home() {
           </div>
         </section>
 
-        {/* Liên Hệ */}
-        <section className="py-16 text-center">
-          <h2 className="text-3xl font-semibold mb-6">Liên Hệ Với Chúng Tôi</h2>
-          <p className="text-lg mb-4">
-            📍 Địa chỉ: Phường An Khê, Quận Thanh Khê, TP. Đà Nẵng
-          </p>
-          <p className="text-lg mb-4">📞 Hotline: 0905720520, 0931124789</p>
-          <p className="text-lg mb-4">📧 Email: smaxddn@gmail.com</p>
-          <a
-            href="tel:0905720520"
-            className="bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-bold shadow-lg hover:bg-blue-700 transition"
-          >
-            Gọi Ngay
-          </a>
-        </section>
+        <div className="w-full mt-10 pb-20 flex flex-col md:flex-row justify-center items-center gap-6">
+          {/* Block Liên Hệ */}
+          <div>
+            <h2 className="text-3xl font-semibold mb-6">
+              Liên Hệ Với Chúng Tôi
+            </h2>
+            <p className="text-lg mb-4">
+              📍 Địa chỉ: 03 Trần Xuân Lê, P. An Khê, Q. Thanh Khê, TP. Đà Nẵng
+            </p>
+            <p className="text-lg mb-4">📞 Hotline: 0905720520, 0931124789</p>
+            <p className="text-lg mb-4">📧 Email: smaxddn@gmail.com</p>
+            <a
+              href="tel:0905720520"
+              className="bg-blue-600 text-white px-6 py-3 rounded-full text-lg font-bold shadow-lg hover:bg-blue-700 transition"
+            >
+              Gọi Ngay
+            </a>
+          </div>
+
+          {/* Hình ảnh cuối trang */}
+          <div className="max-w-[230px] w-full md:w-auto">
+            <img
+              src="/images/logo-footer.png"
+              alt="Hình ảnh cuối trang"
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
       </div>
     </>
   );
