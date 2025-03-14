@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   description:
     "Công ty TNHH thiết kế và xây dựng SMA, Chuyên thiết kế, xây dựng nhà ở hiện đại, sửa chữa, cải tạo nhà  cũ.",
   icons: {
-    icon: "/favicon.npg",
+    icon: "/favicon.png",
   },
 };
 
