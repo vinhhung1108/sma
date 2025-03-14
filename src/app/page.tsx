@@ -17,7 +17,7 @@ export default function Home() {
       <div className="min-h-screen bg-gray-100 text-gray-900">
         {/* Navbar */}
         <header className="bg-blue-600 text-white py-4 px-6 flex justify-between items-center shadow-md">
-          <div className="text-xl font-bold flex items-center space-x-2">
+          <div className="text-xl font-bold flex items-end space-x-2">
             <img
               src="/images/logo-white.png"
               alt="SMA Vina Logo"
