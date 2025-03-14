@@ -1,9 +1,6 @@
-"use client";
 import Head from "next/head";
-import { useState } from "react";
 
 export default function Home() {
-  const [menuOpen, setMenuOpen] = useState(false);
   return (
     <>
       <Head>
@@ -15,60 +12,6 @@ export default function Home() {
       </Head>
 
       <div className="min-h-screen bg-gray-100 text-gray-900">
-        {/* Navbar */}
-        <header className="bg-blue-600 text-white py-4 px-6 flex justify-between items-center shadow-md">
-          <div className="text-xl font-bold flex items-end space-x-2">
-            <img
-              src="/images/logo-white.png"
-              alt="SMA Vina Logo"
-              className="h-14"
-            />
-            <img
-              src="/images/logo-text-white.png"
-              alt="SMA Vina Logo"
-              className="h-10"
-            />
-          </div>
-
-          {/* Mobile Menu Button */}
-          <button
-            className="md:hidden text-white text-3xl focus:outline-none"
-            onClick={() => setMenuOpen(!menuOpen)}
-          >
-            ☰
-          </button>
-
-          {/* Menu */}
-          <nav
-            className={`absolute md:static top-16 left-0 w-full md:w-auto bg-blue-600 md:bg-transparent z-50 transition-all duration-300 ease-in-out ${
-              menuOpen ? "block" : "hidden md:flex"
-            }`}
-          >
-            <ul className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 p-4 md:p-0">
-              <li>
-                <a href="#" className="font-semibold hover:underline">
-                  Trang Chủ
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Dịch Vụ
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Dự Án
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Liên Hệ
-                </a>
-              </li>
-            </ul>
-          </nav>
-        </header>
-
         {/* Hero Section */}
         <div
           className="relative w-full h-[500px] bg-cover bg-center flex items-center justify-center"
