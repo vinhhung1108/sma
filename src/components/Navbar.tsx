@@ -2,23 +2,30 @@
 
 import Link from "next/link";
 import { useState } from "react";
+import Image from "next/image";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   return (
     <header className="bg-blue-600 text-white py-4 px-6 flex justify-between items-center shadow-md">
       <div className="text-xl font-bold flex items-end space-x-2">
-        <Link href="/" className="flex items-end space-x-2">
-          <img
-            src="/images/logo-white.png"
-            alt="SMA Vina Logo"
-            className="h-14"
-          />
-          <img
-            src="/images/logo-text-white.png"
-            alt="SMA Vina Logo"
-            className="h-10"
-          />
+        <Link href="/">
+          <div className="flex items-end space-x-2">
+            <Image
+              src="/images/logo-white.png"
+              alt="SMA Vina Logo"
+              className="h-14"
+              width={56}
+              height={56}
+            ></Image>
+            <Image
+              src="/images/logo-text-white.png"
+              alt="SMA Vina Logo"
+              className="h-10"
+              width={120}
+              height={40}
+            ></Image>
+          </div>
         </Link>
       </div>
 
