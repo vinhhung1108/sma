@@ -32,7 +32,7 @@ export default function Contact() {
       } else {
         setStatus("Có lỗi xảy ra, vui lòng thử lại!");
       }
-    } catch (error) {
+    } catch {
       setStatus("Lỗi kết nối, vui lòng thử lại!");
     }
   };
