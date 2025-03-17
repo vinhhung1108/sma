@@ -77,7 +77,7 @@ export default function Contact() {
               name="message"
               placeholder="Lời nhắn của bạn"
               required
-              rows="5"
+              rows={4}
               value={formData.message}
               onChange={handleChange}
               className="w-full p-3 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600"
