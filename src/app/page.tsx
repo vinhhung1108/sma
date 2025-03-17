@@ -89,15 +89,17 @@ export default function Home() {
           <h2 className="text-3xl font-semibold mb-8">Dự Án Tiêu Biểu</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {[
-              "images/project01.jpg",
-              "images/project02.jpg",
-              "images/project03.jpg",
+              "/images/project01.jpg",
+              "/images/project02.jpg",
+              "/images/project03.jpg",
             ].map((img, index) => (
               <div key={index} className="rounded-lg overflow-hidden shadow-lg">
                 <Image
                   src={img}
                   alt={`Dự án ${index + 1}`}
                   className="w-full h-64 object-cover"
+                  width={100}
+                  height={100}
                 />
               </div>
             ))}
