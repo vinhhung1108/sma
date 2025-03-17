@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -93,7 +94,7 @@ export default function Home() {
               "images/project03.jpg",
             ].map((img, index) => (
               <div key={index} className="rounded-lg overflow-hidden shadow-lg">
-                <img
+                <Image
                   src={img}
                   alt={`Dự án ${index + 1}`}
                   className="w-full h-64 object-cover"
