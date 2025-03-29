@@ -98,8 +98,8 @@ export default function Home() {
                   src={img}
                   alt={`Dự án ${index + 1}`}
                   className="w-full h-64 object-cover"
-                  width={100}
-                  height={120}
+                  width={200}
+                  height={200}
                 />
               </div>
             ))}
