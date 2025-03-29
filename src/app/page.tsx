@@ -90,7 +90,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {[
               "/images/project01.jpg",
-              "/images/project02.jpg",
+              "https://photos.google.com/share/AF1QipMEHIiwR8-gTLIitw3Je1_FLoMIulQSn04Iw44tUxvLAWyqei1S-VWch4G8DI1otQ/photo/AF1QipNJyRUtTgOTQ3taSmVKS9P3M1zP_hna8c3oLD74?key=cmI5RTFYM0ZNd2ZNbUl6WnhENDBadzQzTkxGN1Z3",
               "/images/project03.jpg",
             ].map((img, index) => (
               <div key={index} className="rounded-lg overflow-hidden shadow-lg">
