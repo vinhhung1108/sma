@@ -90,7 +90,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-6xl mx-auto">
             {[
               "/images/project01.jpg",
-              "https://photos.google.com/share/AF1QipMEHIiwR8-gTLIitw3Je1_FLoMIulQSn04Iw44tUxvLAWyqei1S-VWch4G8DI1otQ/photo/AF1QipNJyRUtTgOTQ3taSmVKS9P3M1zP_hna8c3oLD74?key=cmI5RTFYM0ZNd2ZNbUl6WnhENDBadzQzTkxGN1Z3",
+              "/images/99332626d2ec62b23bfd.jpg",
               "/images/project03.jpg",
             ].map((img, index) => (
               <div key={index} className="rounded-lg overflow-hidden shadow-lg">
@@ -99,7 +99,7 @@ export default function Home() {
                   alt={`Dự án ${index + 1}`}
                   className="w-full h-64 object-cover"
                   width={100}
-                  height={100}
+                  height={120}
                 />
               </div>
             ))}
@@ -113,7 +113,8 @@ export default function Home() {
               Liên Hệ Với Chúng Tôi
             </h2>
             <p className="text-lg mb-4">
-              📍 Địa chỉ: 03 Trần Xuân Lê, P. An Khê, Q. Thanh Khê, TP. Đà Nẵng
+              📍 Địa chỉ: 03 Trần Xuân Lê, P. Thanh Khê Đông, Q. Thanh Khê, TP.
+              Đà Nẵng
             </p>
             <p className="text-lg mb-4">📞 Hotline: 0905720520, 0931124789</p>
             <p className="text-lg mb-4">📧 Email: smaxddn@gmail.com</p>
